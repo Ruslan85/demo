@@ -16,6 +16,8 @@ gem 'jquery-rails'
 gem "rmagick"
 gem 'carrierwave'
 
+gem 'faker'
+
 group :production do
   gem 'pg'
 end
