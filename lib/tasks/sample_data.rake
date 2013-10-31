@@ -1,6 +1,6 @@
 namespace :db do
   desc "Fill database"
-  task seed: :environment do
+  task loshok: :environment do
     User.create!(name: "Ruslan",
                 email: "Ret85@mail.ru")      
     9.times do |n|

@@ -18,6 +18,8 @@ gem 'carrierwave'
 
 gem 'faker'
 
+gem "kaminari"
+
 group :production do
   gem 'pg'
 end

@@ -2,7 +2,7 @@ class MicropostsController < ApplicationController
   # GET /microposts
   # GET /microposts.json
   def index
-    @microposts = Micropost.all
+    @microposts = Micropost.order("created_at").page(params[:page]).per(5) #Micropost.all
 
     respond_to do |format|
       format.html # index.html.erb
