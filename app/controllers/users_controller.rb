@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-
+  before_filter :authenticate_user!, except: [:index, :show]
+  
   def index
     @users = User.order("created_at").page(params[:page]).per(5)# User.all
   end

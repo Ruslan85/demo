@@ -13,6 +13,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'devise'
+
 gem "rmagick"
 gem 'carrierwave'
 

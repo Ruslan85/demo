@@ -1,5 +1,6 @@
 class MicropostsController < ApplicationController
-
+  before_filter :authenticate_user!
+  
   def index
     @microposts = Micropost.order("created_at").page(params[:page]).per(5) #Micropost.all
   end
